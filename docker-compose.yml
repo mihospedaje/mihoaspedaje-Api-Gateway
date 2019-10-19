@@ -7,6 +7,6 @@ services:
       SHOW_URLS: 'true'
       ROLE_URL: '3.132.9.148'
       ROLE_PORT: '3000'
-      ROLE_ENTRY: 'role'
+      ROLE_ENTRY: 'api/v1/role'
     ports:
       - '5000:5000'
