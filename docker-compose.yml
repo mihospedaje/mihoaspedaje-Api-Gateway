@@ -1,12 +1,36 @@
 version: '2'
 services:
-  user-api:
+  api-gateway:
+  
     build: .
     environment:
       PORT: '5000'
       SHOW_URLS: 'true'
+      
+      #users
       ROLE_URL: '3.132.9.148'
       ROLE_PORT: '3000'
       ROLE_ENTRY: 'api/v1/role'
+      USERS_URL: '3.132.9.148'
+      USERS_PORT: '3000'
+      USERS_ENTRY: 'api/v1/users'
+
+      #lodging
+
+      LOCATION_URL: '3.132.9.148'
+      LOCATION_PORT: '3030'
+      LOCATION_ENTRY: 'api/v1/location'
+      LODGING_URL: '3.132.9.148'
+      LODGING_PORT: '3030'
+      LODGING_ENTRY: 'api/v1/lodging'
+      LODGINGI_URL: '3.132.9.148'
+      LODGINGI_PORT: '3030'
+      LODGINGI_ENTRY: 'api/v1/lodging_image'
+      
+      # reservation
+      #RESERVATION_URL: '3.132.9.148'
+      #RESERVATION_PORT: '3010'
+      #RESERVATION_ENTRY: 'api/v1/reservation'
+
     ports:
       - '5000:5000'
