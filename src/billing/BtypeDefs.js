@@ -1,33 +1,23 @@
-export const userTypeDef = `
-type User {
+export const paymentTypeDef = `
+type Payment {
     amount: Int!
     method: String!
     credit_card_id: Int!
-    user: {
-        user_id: Int!
-        name: String!
-        lastname: String!
-    }
+    user_id: Int!
     
 }
-input UserInput {
+input PaymentInput {
     amount: Int!
     method: String!
     credit_card_id: Int!
-    user: {
-        user_id: Int!
-        name: String!
-        lastname: String!
-    }
+    user_id: Int!
 }`;
 
-export const userQueries = `
-    allUsers: [User]!
-    userById(id: Int!): User!
+export const paymentQueries = `
+    paymentById(user_id: Int!): Payment!
 `;
 
-export const userMutations = `
-    createUser(user: UserInput!): User!
-    deleteUser(id: Int!): Int
-    updateUser(id: Int!, user: UserInput!): User!
+export const paymentMutations = `
+    createPayment(payment: PaymentInput!): Payment!
+    updatePayment(user_id: Int!, payment: PaymentInput!): Payment!
 `;

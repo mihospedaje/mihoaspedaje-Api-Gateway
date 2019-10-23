@@ -1,8 +1,8 @@
 import { generalRequest, getRequest } from '../../utilities';
 import { url, port, entryPoint } from './Reserver';
 
-//const URL = `http://${url}:${port}/${entryPoint}`;
-const URL = `http://3.132.9.148:3000/api/v1/reservation`;
+const URL = `http://${url}:${port}/${entryPoint}`;
+//const URL = `http://18.188.94.196:3010/api/v1/reservation`;
 
 const Reresolvers = {
 	Query: {

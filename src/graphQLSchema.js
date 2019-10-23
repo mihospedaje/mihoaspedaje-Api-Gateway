@@ -43,12 +43,20 @@ import {
 	reservationTypeDef
 } from './reservation/reservations/RetypeDefs';
 
+// Billing
+import {
+	paymentMutations,
+	paymentQueries,
+	paymentTypeDef
+} from './billing/BtypeDefs';
+
 import roleResolvers from './user/role/Rresolvers';
 import userResolvers from './user/users/Uresolvers';
 import locationResolvers from './lodging/location/Locresolvers';
 import lodgingiResolvers from './lodging/lodging_image/Lodiresolvers';
 import lodgingResolvers from './lodging/lodging/Lodresolvers';
 import reservationResolvers from './reservation/reservations/Reresolvers';
+import paymentResolvers from './billing/Bresolvers';
 // merge the typeDefs
 const mergedTypeDefs = mergeSchemas(
 	[
@@ -59,7 +67,8 @@ const mergedTypeDefs = mergeSchemas(
 		locationTypeDef,
 		lodgingiTypeDef,
 		lodgingTypeDef,
-		reservationTypeDef
+		reservationTypeDef,
+		paymentTypeDef
 	],
 	[
 		userQueries,
@@ -67,7 +76,8 @@ const mergedTypeDefs = mergeSchemas(
 		locationQueries,
 		lodgingiQueries,
 		lodgingQueries,
-		reservationQueries
+		reservationQueries,
+		paymentQueries
 	],
 	[
 		userMutations,
@@ -75,7 +85,8 @@ const mergedTypeDefs = mergeSchemas(
 		locationMutations,
 		lodgingiMutations,
 		lodgingMutations,
-		reservationMutations
+		reservationMutations,
+		paymentMutations
 	]
 );
 
@@ -89,7 +100,8 @@ export default makeExecutableSchema({
 		locationResolvers,
 		lodgingiResolvers,
 		lodgingResolvers,
-		reservationResolvers
+		reservationResolvers,
+		paymentResolvers
 
 	)
 });

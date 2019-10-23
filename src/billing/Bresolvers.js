@@ -6,18 +6,14 @@ const URL = `http://3.132.9.148:3000/api/v1/payment`;
 
 const Bresolvers = {
 	Query: {
-		allUsers: (_) =>
-			getRequest(URL, ''),
-		userById: (_, { id }) =>
+		paymentById: (_, { id }) =>
 			generalRequest(`${URL}/${id}`, 'GET'),
 	},
 	Mutation: {
-		createUser: (_, { user }) =>
-			generalRequest(`${URL}`, 'POST', user),
-		updateUser: (_, { id, user }) =>
-			generalRequest(`${URL}/${id}`, 'PUT', user),
-		deleteUser: (_, { id }) =>
-			generalRequest(`${URL}/${id}`, 'DELETE')
+		createPayment: (_, { payment }) =>
+			generalRequest(`${URL}`, 'POST', payment),
+		updatePayment: (_, { id, payment }) =>
+			generalRequest(`${URL}/${id}`, 'PUT', payment)
 	}
 };
 

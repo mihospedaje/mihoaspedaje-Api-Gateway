@@ -1,8 +1,8 @@
 import { generalRequest, getRequest } from '../../utilities';
 import { url, port, entryPoint } from './Lodiserver';
 
-//const URL = `http://${url}:${port}/${entryPoint}`;
-const URL = `http://3.132.9.148:3030/api/v1/lodging_image`;
+const URL = `http://${url}:${port}/${entryPoint}`;
+//const URL = `http://3.132.92.73:3030/api/v1/lodging_image`;
 
 const Lodiresolvers = {
 	Query: {

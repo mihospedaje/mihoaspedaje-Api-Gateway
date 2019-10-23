@@ -8,6 +8,7 @@ services:
       SHOW_URLS: 'true'
       
       #users
+      
       ROLE_URL: '3.132.9.148'
       ROLE_PORT: '3000'
       ROLE_ENTRY: 'api/v1/role'
@@ -17,20 +18,28 @@ services:
 
       #lodging
 
-      LOCATION_URL: '3.132.9.148'
+      LOCATION_URL: '3.132.92.73'
       LOCATION_PORT: '3030'
       LOCATION_ENTRY: 'api/v1/location'
-      LODGING_URL: '3.132.9.148'
+      LODGING_URL: '3.132.92.73'
       LODGING_PORT: '3030'
       LODGING_ENTRY: 'api/v1/lodging'
-      LODGINGI_URL: '3.132.9.148'
+      LODGINGI_URL: '3.132.92.73'
       LODGINGI_PORT: '3030'
       LODGINGI_ENTRY: 'api/v1/lodging_image'
       
       # reservation
-      #RESERVATION_URL: '3.132.9.148'
-      #RESERVATION_PORT: '3010'
-      #RESERVATION_ENTRY: 'api/v1/reservation'
+      
+      RESERVATION_URL: '18.188.94.196'
+      RESERVATION_PORT: '3010'
+      RESERVATION_ENTRY: 'api/v1/reservation'
+
+      #billing
+
+      RESERVATION_URL: '3.132.9.148'
+      RESERVATION_PORT: '3045'
+      RESERVATION_ENTRY: 'api/v1/payment'
+
 
     ports:
       - '5000:5000'
