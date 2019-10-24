@@ -13,11 +13,11 @@ input LocationInput {
 
 export const locationQueries = `
     allLocations: [Location]!
-    locationById(location_id: Int!): Location!
+    locationById(id: Int!): Location!
 `;
 
 export const locationMutations = `
     createLocation(location: LocationInput!): Location!
-    deleteLocation(location_id: Int!): Int
-    updateLocation(location_id: Int!, location: LocationInput!): Location!
+    deleteLocation(id: Int!): Int
+    updateLocation(id: Int!, location: LocationInput!): Location!
 `;

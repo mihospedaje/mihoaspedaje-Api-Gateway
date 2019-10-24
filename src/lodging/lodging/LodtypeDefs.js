@@ -60,11 +60,11 @@ input LodgingInput {
 
 export const lodgingQueries = `
     allLodgings: [Lodging]!
-    lodgingById(lodging_id: Int!): Lodging!
+    lodgingById(id: Int!): Lodging!
 `;
 
 export const lodgingMutations = `
     createLodging(lodging: LodgingInput!): Lodging!
-    deleteLodging(lodging_id: Int!): Int
-    updateLodging(lodging_id: Int!, lodging: LodgingInput!): Lodging!
+    deleteLodging(id: Int!): Int
+    updateLodging(id: Int!, lodging: LodgingInput!): Lodging!
 `;

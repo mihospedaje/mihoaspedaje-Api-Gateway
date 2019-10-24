@@ -1,8 +1,8 @@
 import { generalRequest, getRequest } from '../../utilities';
 import { url, port, entryPoint } from './Userver';
 
-//const URL = `http://${url}:${port}/${entryPoint}`;
-const URL = `http://3.132.9.148:3000/api/v1/users`;
+const URL = `http://${url}:${port}/${entryPoint}`;
+//const URL = `http://localhost:3000/api/v1/users`;
 
 const Uresolvers = {
 	Query: {
@@ -10,6 +10,8 @@ const Uresolvers = {
 			getRequest(URL, ''),
 		userById: (_, { id }) =>
 			generalRequest(`${URL}/${id}`, 'GET'),
+		//userByEmail: (_, { email }) =>
+		//	generalRequest(`${URL}/${email}`, 'GET'),
 	},
 	Mutation: {
 		createUser: (_, { user }) =>
