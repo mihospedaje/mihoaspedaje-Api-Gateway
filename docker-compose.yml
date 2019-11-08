@@ -8,7 +8,10 @@ services:
       SHOW_URLS: 'true'
       
       #users
-      
+
+      FAVORITE_URL: '3.132.9.148'
+      FAVORITE_PORT: '3000'
+      FAVORITE_ENTRY: 'api/v1/favorite'
       ROLE_URL: '3.132.9.148'
       ROLE_PORT: '3000'
       ROLE_ENTRY: 'api/v1/role'
@@ -36,9 +39,9 @@ services:
 
       #billing
 
-      RESERVATION_URL: '3.132.9.148'
-      RESERVATION_PORT: '3045'
-      RESERVATION_ENTRY: 'api/v1/payment'
+      BILLING_URL: '3.132.9.148'
+      BILLING_PORT: '3045'
+      BILLING_ENTRY: 'api/v1/payment'
 
 
     ports:

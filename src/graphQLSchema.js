@@ -17,6 +17,12 @@ import {
 	roleTypeDef
 } from './user/role/RtypeDefs';
 
+import {
+	favoriteMutations,
+	favoriteQueries,
+	favoriteTypeDef
+} from './user/favorite/FtypeDefs';
+
 //lodging
 import {
 	locationMutations,
@@ -52,6 +58,7 @@ import {
 
 import roleResolvers from './user/role/Rresolvers';
 import userResolvers from './user/users/Uresolvers';
+import favoriteResolvers from './user/favorite/Fresolvers';
 import locationResolvers from './lodging/location/Locresolvers';
 import lodgingiResolvers from './lodging/lodging_image/Lodiresolvers';
 import lodgingResolvers from './lodging/lodging/Lodresolvers';
@@ -64,6 +71,7 @@ const mergedTypeDefs = mergeSchemas(
 		
 		roleTypeDef,
 		userTypeDef,
+		favoriteTypeDef,
 		locationTypeDef,
 		lodgingiTypeDef,
 		lodgingTypeDef,
@@ -73,6 +81,7 @@ const mergedTypeDefs = mergeSchemas(
 	[
 		userQueries,
 		roleQueries,
+		favoriteQueries,
 		locationQueries,
 		lodgingiQueries,
 		lodgingQueries,
@@ -82,6 +91,7 @@ const mergedTypeDefs = mergeSchemas(
 	[
 		userMutations,
 		roleMutations,
+		favoriteMutations,
 		locationMutations,
 		lodgingiMutations,
 		lodgingMutations,
@@ -97,6 +107,7 @@ export default makeExecutableSchema({
 		{ JSON: GraphQLJSON }, // allows scalar JSON
 		userResolvers,
 		roleResolvers,
+		favoriteResolvers,
 		locationResolvers,
 		lodgingiResolvers,
 		lodgingResolvers,
