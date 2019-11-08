@@ -56,6 +56,14 @@ import {
 	paymentTypeDef
 } from './billing/BtypeDefs';
 
+//ldap
+
+import {
+	ldapMutations,
+	ldapQueries,
+	ldapTypeDef
+} from './ldap/LDtypeDefs';
+
 import roleResolvers from './user/role/Rresolvers';
 import userResolvers from './user/users/Uresolvers';
 import favoriteResolvers from './user/favorite/Fresolvers';
@@ -64,6 +72,7 @@ import lodgingiResolvers from './lodging/lodging_image/Lodiresolvers';
 import lodgingResolvers from './lodging/lodging/Lodresolvers';
 import reservationResolvers from './reservation/reservations/Reresolvers';
 import paymentResolvers from './billing/Bresolvers';
+import ldapResolvers from './ldap/LDresolvers';
 // merge the typeDefs
 const mergedTypeDefs = mergeSchemas(
 	[
@@ -76,7 +85,8 @@ const mergedTypeDefs = mergeSchemas(
 		lodgingiTypeDef,
 		lodgingTypeDef,
 		reservationTypeDef,
-		paymentTypeDef
+		paymentTypeDef,
+		ldapTypeDef
 	],
 	[
 		userQueries,
@@ -86,7 +96,8 @@ const mergedTypeDefs = mergeSchemas(
 		lodgingiQueries,
 		lodgingQueries,
 		reservationQueries,
-		paymentQueries
+		paymentQueries,
+		ldapQueries
 	],
 	[
 		userMutations,
@@ -96,7 +107,8 @@ const mergedTypeDefs = mergeSchemas(
 		lodgingiMutations,
 		lodgingMutations,
 		reservationMutations,
-		paymentMutations
+		paymentMutations,
+		ldapMutations
 	]
 );
 
@@ -112,7 +124,8 @@ export default makeExecutableSchema({
 		lodgingiResolvers,
 		lodgingResolvers,
 		reservationResolvers,
-		paymentResolvers
+		paymentResolvers,
+		ldapResolvers
 
 	)
 });

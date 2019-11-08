@@ -1,8 +1,8 @@
 import { generalRequest, getRequest } from '../../utilities';
 import { url, port, entryPoint } from './Fserver';
 
-const URL = `http://${url}:${port}/${entryPoint}`;
-//const URL = `http://localhost:3000/api/v1/favorite`;
+//const URL = `http://${url}:${port}/${entryPoint}`;
+const URL = `http://localhost:3000/api/v1/favorite`;
 
 const Fresolvers = {
 	Query: {
