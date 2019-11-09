@@ -9,25 +9,26 @@ services:
       
       #users
 
-      FAVORITE_URL: '3.132.9.148'
+      FAVORITE_URL: '18.190.94.157'
       FAVORITE_PORT: '3000'
       FAVORITE_ENTRY: 'api/v1/favorite'
-      ROLE_URL: '3.132.9.148'
+      ROLE_URL: '18.190.94.157'
       ROLE_PORT: '3000'
-      ROLE_ENTRY: 'api/v1/role'
+      ROLE_ENTRY: '18.190.94.157'
       USERS_URL: '3.132.9.148'
       USERS_PORT: '3000'
       USERS_ENTRY: 'api/v1/users'
 
       #lodging
 
-      LOCATION_URL: '3.132.92.73'
+      LOCATION_URL: '3.134.40.79'
       LOCATION_PORT: '3030'
       LOCATION_ENTRY: 'api/v1/location'
-      LODGING_URL: '3.132.92.73'
+      LODGING_URL: '3.134.40.79'
       LODGING_PORT: '3030'
       LODGING_ENTRY: 'api/v1/lodging'
-      LODGINGI_URL: '3.132.92.73'
+      LODGING_ENTRYn: 'api/v1/lodging/name'
+      LODGINGI_URL: '3.134.40.79'
       LODGINGI_PORT: '3030'
       LODGINGI_ENTRY: 'api/v1/lodging_image'
       
@@ -43,6 +44,14 @@ services:
       BILLING_PORT: '3045'
       BILLING_ENTRY: 'api/v1/payment'
 
+      #LDAP server
+      LDAP_URL:  '18.190.94.157'
+      LDAP_PORT: '3000'
+      LDAP_ENTRYLu:  'auth'
+      LDAP_ENTRYLa: 'authAdmin'
+      LDAP_ENTRYAdu: 'add'
+      LDAP_ENTRYAda: 'addAdmin'
+      LDAP_ENTRYV: 'validate'
 
     ports:
       - '5000:5000'

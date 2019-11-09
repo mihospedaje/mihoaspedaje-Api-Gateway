@@ -1,8 +1,10 @@
 import { generalRequest, getRequest } from '../../utilities';
-import { url, port, entryPoint } from './Lodserver';
+import { url, port, entryPoint,entryPointn } from './Lodserver';
 
 const URL = `http://${url}:${port}/${entryPoint}`;
-//const URL = `http://3.132.92.73:3030/api/v1/lodging`;
+const URL1 = `http://${url}:${port}/${entryPointn}`;
+//const URL = `http://3.134.40.79:3030/api/v1/lodging`;
+//const URL1 = `http://3.134.40.79:3030/api/v1/lodging/name`;
 
 const Lodresolvers = {
 	Query: {
@@ -10,6 +12,8 @@ const Lodresolvers = {
 			getRequest(URL, ''),
 		lodgingById: (_, { id }) =>
 			generalRequest(`${URL}/${id}`, 'GET'),
+			lodgingByName: (_, { name }) =>
+			getRequest(URL1, name),
 	},
 	Mutation: {
 		createLodging: (_, { lodging }) =>

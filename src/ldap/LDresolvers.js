@@ -1,17 +1,18 @@
 import { generalRequest, getRequest } from '../utilities';
 import { url, port, entryPointLu, entryPointLa,entryPointAdu,entryPointAda,entryPointV } from './LDserver';
 
-/*const URLLu = `http://${url}:${port}/${entryPointLu}`;
+const URLLu = `http://${url}:${port}/${entryPointLu}`;
 const URLLa = `http://${url}:${port}/${entryPointLa}`;
 const URLAdu = `http://${url}:${port}/${entryPointAdu}`;
 const URLAda = `http://${url}:${port}/${entryPointAda}`;
 const URLV = `http://${url}:${port}/${entryPointV}`;
-*/
-const URLLu = `http://localhost:3000/auth`;
+
+/*const URLLu = `http://18.190.94.157:3000/auth`;
 const URLLa = `http://localhost:3000/authAdmin`;
 const URLAdu = `http://localhost:3000/add`;
 const URLAda = `http://localhost:3000/addAdmin`;
 const URLV = 'http://localhost:3000/validate';
+*/
 const LDresolvers = {
 	Query: {
 	},

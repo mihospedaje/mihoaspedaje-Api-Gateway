@@ -61,6 +61,7 @@ input LodgingInput {
 export const lodgingQueries = `
     allLodgings: [Lodging]!
     lodgingById(id: Int!): Lodging!
+    lodgingByName(name: String!): [Lodging]!
 `;
 
 export const lodgingMutations = `
