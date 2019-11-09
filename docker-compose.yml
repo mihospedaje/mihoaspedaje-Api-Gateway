@@ -12,10 +12,11 @@ services:
       FAVORITE_URL: '18.190.94.157'
       FAVORITE_PORT: '3000'
       FAVORITE_ENTRY: 'api/v1/favorite'
+      FAVORITE_ENTRYu: 'api/v1/favorite/user'
       ROLE_URL: '18.190.94.157'
       ROLE_PORT: '3000'
-      ROLE_ENTRY: '18.190.94.157'
-      USERS_URL: '3.132.9.148'
+      ROLE_ENTRY: 'api/v1/role'
+      USERS_URL: '18.190.94.157'
       USERS_PORT: '3000'
       USERS_ENTRY: 'api/v1/users'
 

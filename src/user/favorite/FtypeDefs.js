@@ -13,6 +13,7 @@ input FavoriteInput {
 export const favoriteQueries = `
     allFavorites: [Favorite]!
     favoriteById(id: Int!): Favorite!
+    favoriteByUserid(user_id: Int!): [Favorite]!
 `;
 
 export const favoriteMutations = `
