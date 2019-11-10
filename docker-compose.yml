@@ -50,9 +50,8 @@ services:
       LDAP_URL:  '18.190.94.157'
       LDAP_PORT: '3000'
       LDAP_ENTRYLu:  'auth'
-      LDAP_ENTRYLa: 'authAdmin'
       LDAP_ENTRYAdu: 'add'
-      LDAP_ENTRYAda: 'addAdmin'
+      LDAP_ENTRYUp: 'update'
       LDAP_ENTRYV: 'validate'
 
     ports:

@@ -29,8 +29,7 @@ export const ldapQueries = `
 
 export const ldapMutations = `
     loginUser(credentials: LoginInput!): correct!
-    loginAdmin(credentials: LoginInput!): correct!
     createUserld(user: UserInputld!): response!
-    createAdmin(user: UserInputld!): response!
+    updatePassword(user: UserInputld!): response!
     validate(credentials: Token): only!
 `;

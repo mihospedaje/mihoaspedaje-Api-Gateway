@@ -1,16 +1,14 @@
 import { generalRequest, getRequest } from '../utilities';
-import { url, port, entryPointLu, entryPointLa,entryPointAdu,entryPointAda,entryPointV } from './LDserver';
+import { url, port, entryPointLu,entryPointAdu,entryPointUp,entryPointV } from './LDserver';
 
 const URLLu = `http://${url}:${port}/${entryPointLu}`;
-const URLLa = `http://${url}:${port}/${entryPointLa}`;
 const URLAdu = `http://${url}:${port}/${entryPointAdu}`;
-const URLAda = `http://${url}:${port}/${entryPointAda}`;
+const URLUp = `http://${url}:${port}/${entryPointUp}`;
 const URLV = `http://${url}:${port}/${entryPointV}`;
-
-/*const URLLu = `http://18.190.94.157:3000/auth`;
-const URLLa = `http://localhost:3000/authAdmin`;
+/*
+const URLLu = `http://18.190.94.157:3000/auth`;
 const URLAdu = `http://localhost:3000/add`;
-const URLAda = `http://localhost:3000/addAdmin`;
+const URLUp = `http://localhost:3000/update`;
 const URLV = 'http://localhost:3000/validate';
 */
 const LDresolvers = {
@@ -21,14 +19,10 @@ const LDresolvers = {
 			let res = await	generalRequest(`${URLLu}`, 'POST', credentials);
 			return res
 		},
-		loginAdmin: async (_, { credentials }) => {
-			let res = await	generalRequest(`${URLLa}`, 'POST', credentials)
-			return res
-		},
 		createUserld: (_, { user }) =>
 			generalRequest(`${URLAdu}`, 'POST', user),
-		createAdmin: (_, { user }) =>
-			generalRequest(`${URLAda}`, 'POST', user),
+		updatePassword: (_, { user }) =>
+			generalRequest(`${URLUp}`, 'POST', user),
 		
 		validate: async (_, { credentials }) => {
 			let res = await	generalRequest(`${URLV}`, 'POST', credentials)
