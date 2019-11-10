@@ -19,6 +19,7 @@ services:
       USERS_URL: '18.190.94.157'
       USERS_PORT: '3000'
       USERS_ENTRY: 'api/v1/users'
+      USERS_ENTRYe: 'api/v1/users/email'
 
       #lodging
 
@@ -35,7 +36,7 @@ services:
       
       # reservation
       
-      RESERVATION_URL: '18.188.94.196'
+      RESERVATION_URL: '3.133.13.240'
       RESERVATION_PORT: '3010'
       RESERVATION_ENTRY: 'api/v1/reservation'
 

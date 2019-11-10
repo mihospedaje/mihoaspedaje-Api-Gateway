@@ -7,6 +7,7 @@ type Reservation {
     guest_adult_number: Int!
     guest_children_number: Int!
     is_cancel: Boolean!
+    lodging_id: Int!
 }
 input ReservationInput {
     user_id: Int!
@@ -15,6 +16,7 @@ input ReservationInput {
     guest_adult_number: Int!
     guest_children_number: Int!
     is_cancel: Boolean!
+    lodging_id: Int!
 }`;
 
 export const reservationQueries = `

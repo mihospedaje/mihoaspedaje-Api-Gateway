@@ -7,6 +7,7 @@ type User {
     email: String!
     password: String!
     idrole: Int!
+    image: String!
 }
 input UserInput {
     name: String!
@@ -15,6 +16,7 @@ input UserInput {
     email: String!
     password: String!
     idrole: Int!
+    image: String!
 }`;
 
 export const userQueries = `
