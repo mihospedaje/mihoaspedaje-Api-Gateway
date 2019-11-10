@@ -1,10 +1,10 @@
 import { generalRequest, getRequest } from '../../utilities';
 import { url, port, entryPoint,entryPointe } from './Userver';
 
-//const URL = `http://${url}:${port}/${entryPoint}`;
-//const URL1 = `http://${url}:${port}/${entryPointe}`;
-const URL = `http://localhost:3000/api/v1/users`;
-const URL1 = `http://localhost:3000/api/v1/users/email`;
+const URL = `http://${url}:${port}/${entryPoint}`;
+const URL1 = `http://${url}:${port}/${entryPointe}`;
+//const URL = `http://localhost:3000/api/v1/users`;
+//const URL1 = `http://localhost:3000/api/v1/users/email`;
 
 const Uresolvers = {
 	Query: {
