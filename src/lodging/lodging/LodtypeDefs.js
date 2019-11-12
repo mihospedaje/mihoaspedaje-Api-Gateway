@@ -62,6 +62,7 @@ export const lodgingQueries = `
     allLodgings: [Lodging]!
     lodgingById(id: Int!): Lodging!
     lodgingByName(name: String!): [Lodging]!
+    lodgingByUser(user_id: Int!): [Lodging]!
 `;
 
 export const lodgingMutations = `

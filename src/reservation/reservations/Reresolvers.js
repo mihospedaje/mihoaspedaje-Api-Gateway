@@ -1,15 +1,18 @@
 import { generalRequest, getRequest } from '../../utilities';
-import { url, port, entryPoint } from './Reserver';
+import { url, port, entryPoint ,entryPointu} from './Reserver';
 
 const URL = `http://${url}:${port}/${entryPoint}`;
-//const URL = `http://3.133.13.240:3010/api/v1/reservation`;
-
+const URL1 = `http://${url}:${port}/${entryPointu}`;
+//const URL = `http://localhost:3010/api/v1/reservation`;
+//const URL1 = `http://localhost:3010/api/v1/reservation/user`;
 const Reresolvers = {
 	Query: {
 		allReservations: (_) =>
 			getRequest(URL, ''),
 		reservationById: (_, { id }) =>
 			generalRequest(`${URL}/${id}`, 'GET'),
+		reservationByUser: (_, { user_id }) =>
+			getRequest(URL1, user_id),
 	},
 	Mutation: {
 		createReservation: (_, { reservation }) =>

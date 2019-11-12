@@ -22,6 +22,7 @@ input ReservationInput {
 export const reservationQueries = `
     allReservations: [Reservation]!
     reservationById(id: Int!): Reservation!
+    reservationByUser(user_id: Int!): [Reservation]!
 `;
 
 export const reservationMutations = `

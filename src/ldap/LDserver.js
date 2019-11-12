@@ -5,6 +5,6 @@ export const entryPointLu = process.env.LDAP_ENTRYLu
 // agregar usuarios
 export const entryPointAdu = process.env.LDAP_ENTRYAdu
 // actualizar contraseña
-export const entryPointUp = process.env.LDAP_ENTRYAda
+export const entryPointUp = process.env.LDAP_ENTRYUp
 // verificar Token
 export const entryPointV = process.env.LDAP_ENTRYV

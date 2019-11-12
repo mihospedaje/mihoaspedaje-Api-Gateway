@@ -30,19 +30,21 @@ services:
       LODGING_PORT: '3030'
       LODGING_ENTRY: 'api/v1/lodging'
       LODGING_ENTRYn: 'api/v1/lodging/name'
+      LODGING_ENTRYu: 'api/v1/lodging/user'
       LODGINGI_URL: '3.134.40.79'
       LODGINGI_PORT: '3030'
       LODGINGI_ENTRY: 'api/v1/lodging_image'
       
       # reservation
       
-      RESERVATION_URL: '3.133.13.240'
+      RESERVATION_URL: '3.134.33.163'
       RESERVATION_PORT: '3010'
       RESERVATION_ENTRY: 'api/v1/reservation'
+      RESERVATION_ENTRYu: 'api/v1/reservation/user'
 
       #billing
 
-      BILLING_URL: '3.132.9.148'
+      BILLING_URL: '3.134.40.79'
       BILLING_PORT: '3045'
       BILLING_ENTRY: 'api/v1/payment'
 
