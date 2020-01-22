@@ -1,15 +1,18 @@
 import { generalRequest, getRequest } from '../../utilities';
-import { url, port, entryPoint } from './Lodiserver';
+import { url, port, entryPoint, entryPointl } from './Lodiserver';
 
 const URL = `http://${url}:${port}/${entryPoint}`;
-//const URL = `http://3.132.92.73:3030/api/v1/lodging_image`;
-
+const URL2 = `http://${url}:${port}/${entryPointl}`;
+//const URL = `http://localhost:3030/api/v1/lodging_image`;
+//const URL2 = `http://localhost:3030/api/v1/lodging_image/lodging`;
 const Lodiresolvers = {
 	Query: {
 		allLodging_image: (_) =>
 			getRequest(URL, ''),
 		lodging_imageById: (_, { id }) =>
 			generalRequest(`${URL}/${id}`, 'GET'),
+		lodging_imageByLodgingid: (_, { lodging_id }) =>
+			getRequest(URL2, lodging_id),
 	},
 	Mutation: {
 		createLodging_image: (_, { lodging_image }) =>

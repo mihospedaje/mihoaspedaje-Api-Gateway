@@ -12,6 +12,7 @@ input Lodging_imageInput {
 export const lodgingiQueries = `
     allLodging_image: [Lodging_image]!
     lodging_imageById(id: Int!): Lodging_image!
+    lodging_imageByLodgingid(lodging_id: Int!): [Lodging_image]!
 `;
 
 export const lodgingiMutations = `

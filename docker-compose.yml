@@ -9,47 +9,48 @@ services:
       
       #users
 
-      FAVORITE_URL: '18.190.94.157'
+      FAVORITE_URL: '52.72.5.188'
       FAVORITE_PORT: '3000'
       FAVORITE_ENTRY: 'api/v1/favorite'
       FAVORITE_ENTRYu: 'api/v1/favorite/user'
-      ROLE_URL: '18.190.94.157'
+      ROLE_URL: '52.72.5.188'
       ROLE_PORT: '3000'
       ROLE_ENTRY: 'api/v1/role'
-      USERS_URL: '18.190.94.157'
+      USERS_URL: '52.72.5.188'
       USERS_PORT: '3000'
       USERS_ENTRY: 'api/v1/users'
       USERS_ENTRYe: 'api/v1/users/email'
 
       #lodging
 
-      LOCATION_URL: '3.134.40.79'
+      LOCATION_URL: '52.3.9.19'
       LOCATION_PORT: '3030'
       LOCATION_ENTRY: 'api/v1/location'
-      LODGING_URL: '3.134.40.79'
+      LODGING_URL: '52.3.9.19'
       LODGING_PORT: '3030'
       LODGING_ENTRY: 'api/v1/lodging'
       LODGING_ENTRYn: 'api/v1/lodging/name'
       LODGING_ENTRYu: 'api/v1/lodging/user'
-      LODGINGI_URL: '3.134.40.79'
+      LODGINGI_URL: '52.3.9.19'
       LODGINGI_PORT: '3030'
       LODGINGI_ENTRY: 'api/v1/lodging_image'
+      LODGINGI_ENTRYl: 'api/v1/lodging_image/lodging'
       
       # reservation
       
-      RESERVATION_URL: '3.134.33.163'
+      RESERVATION_URL: '52.23.138.253'
       RESERVATION_PORT: '3010'
       RESERVATION_ENTRY: 'api/v1/reservation'
       RESERVATION_ENTRYu: 'api/v1/reservation/user'
 
       #billing
 
-      BILLING_URL: '3.134.40.79'
+      BILLING_URL: '52.3.9.19'
       BILLING_PORT: '3045'
       BILLING_ENTRY: 'api/v1/payment'
 
       #LDAP server
-      LDAP_URL:  '18.190.94.157'
+      LDAP_URL:  '52.72.5.188'
       LDAP_PORT: '3000'
       LDAP_ENTRYLu:  'auth'
       LDAP_ENTRYAdu: 'add'
